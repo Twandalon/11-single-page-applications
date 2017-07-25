@@ -1,5 +1,5 @@
 'use strict';
-// var app = app || {};
+var app = app || {};
 
 (function(module) {
   const aboutController = {};
@@ -10,7 +10,8 @@
     $('#articles').hide();
     $('#about').show();
     console.log('about');
+    // app.Article.fetchAll(articleView.initIndexPage);
   }
 
   module.aboutController = aboutController;
-})(window);
+})(app);
