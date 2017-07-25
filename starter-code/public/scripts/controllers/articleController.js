@@ -1,5 +1,5 @@
 'use strict';
-// var app = app || {};
+var app = app || {};
 
 
 (function(module) {
@@ -9,6 +9,7 @@
     $('.tab-content').hide();
     $('#articles').show();
     console.log('articlecontroller')
+    // app.Article.fetchAll(articleView.initIndexPage);
   }
   // DONE: Setup a function that kicks off the fetching and rendering of articles, using the same
   // code that used to be in index.html.
@@ -16,4 +17,4 @@
 
 
   module.articleController = articleController;
-})(window);
+})(app);
