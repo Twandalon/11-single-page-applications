@@ -1,5 +1,4 @@
 'use strict';
-
 const pg = require('pg');
 const fs = require('fs');
 const express = require('express');
@@ -18,6 +17,7 @@ app.use(express.static('./public'));
 
 app.get('/new', (request, response) => response.sendFile('new.html', {root: './public'}));
 app.get('/admin', (request, response) => response.sendFile('admin.html', {root: './public'}));
+app.get('/about', (request, response) => response.sendfile('index.html', {root: './public'}));
 app.get('/articles', (request, response) => {
   client.query(`
     SELECT * FROM articles
