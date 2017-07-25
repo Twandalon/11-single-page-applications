@@ -6,10 +6,9 @@ var app = app || {};
 
   // DONE: Define a function that hides all main section elements, and then reveals just the #about section:
   aboutController.init = function (){
-    $('.tab-content').hide();
-    $('#articles').hide();
-    $('#about').show();
     console.log('about');
+    $('.tab-content').hide();
+    $('#about').show();
     // app.Article.fetchAll(articleView.initIndexPage);
   }
 
