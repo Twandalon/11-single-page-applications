@@ -8,7 +8,6 @@ var app = app || {};
     // Object.keys(stuff).forEach(key => this[key] = stuff[key])
     $('.tab-content').hide();
     $('#articles').show();
-    console.log('articlecontroller')
     // app.Article.fetchAll(articleView.initIndexPage);
   }
   // DONE: Setup a function that kicks off the fetching and rendering of articles, using the same
